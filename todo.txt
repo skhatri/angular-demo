@@ -1,0 +1,53 @@
+//task runner - from build scripts Gruntfile (is a build file)
+sudo npm install -g grunt
+//scaffolding tool - generate code
+sudo npm install -g yo
+//is a test runner. to run javascript tests
+sudo npm install -g karma
+//bower is a dependency mgmt system.
+sudo npm install -g bower
+//installs compass gem that ruby needs to compile Compass files
+sudo gem install compass
+//jasmine
+
+TO create a new project. create a directory and execute the following:
+//is to download angular code generators
+npm install generator-angular
+//is to download karma configuration file generator
+npm install generator-karma
+
+
+yo angular
+
+//after answering few questions
+//your project is created
+
+//there will be grunt file, karma config files
+//with grunt
+$ grunt
+//runs the default build target which will run tests for you and then package your app into a dist folder
+
+$ grunt test
+//if you want to run tests only
+
+$ grunt jshint:all
+//if you want to check for javascript code issues
+
+
+
+you can install batarang angular chrome plugin which helps with angular view
+
+
+
+angular.module('week3App')  //uses existing module that was already created in angular called week3App
+
+angular.module('week3App', [])//creates a new module called week3App with no dependencies (it doesnot
+                              depend on anything as the dependency array is empty
+
+
+angular.module('week3App', ['ngCookies']) //creates a new module and depends on ngCookies. something
+like this can be used to initialize your app if you are using cookies from within angular.
+
+
+ng-model is the directive you put in front end html code,
+that does a linkup (binding) between the UI value and scope variable
