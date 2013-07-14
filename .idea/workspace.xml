@@ -5,11 +5,12 @@
     <ignored path="week3.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/todo.txt" changelist="53cf63d6-933d-4e77-8a46-63776a9584d0" time="1373785307752" ignored="false" />
-    <file path="/app.js" changelist="53cf63d6-933d-4e77-8a46-63776a9584d0" time="1373785825488" ignored="false" />
+    <file path="/app.js" changelist="53cf63d6-933d-4e77-8a46-63776a9584d0" time="1373786583194" ignored="false" />
     <file path="/sushil.html" changelist="53cf63d6-933d-4e77-8a46-63776a9584d0" time="1373785078585" ignored="false" />
     <file path="/vaibhav.html" changelist="53cf63d6-933d-4e77-8a46-63776a9584d0" time="1373785033874" ignored="false" />
-    <file path="/index.html" changelist="53cf63d6-933d-4e77-8a46-63776a9584d0" time="1373784434846" ignored="false" />
+    <file path="/index.html" changelist="53cf63d6-933d-4e77-8a46-63776a9584d0" time="1373786384307" ignored="false" />
     <file path="/main.html" changelist="53cf63d6-933d-4e77-8a46-63776a9584d0" time="1373785547052" ignored="false" />
+    <file path="/math.html" changelist="53cf63d6-933d-4e77-8a46-63776a9584d0" time="1373786476069" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,70 +29,7 @@
     <favorites_list name="week3" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="todo.txt" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/todo.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="52" column="68" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="0" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sushil.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/sushil.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="10" selection-start="331" selection-end="331" vertical-scroll-proportion="-8.75">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/views/main.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="4" selection-start="50" selection-end="289" vertical-scroll-proportion="0.20153551">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="31" selection-start="1347" selection-end="1347" vertical-scroll-proportion="-5.625">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -102,12 +40,13 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/vaibhav.html" />
         <option value="$PROJECT_DIR$/app/views/sushil.html" />
         <option value="$PROJECT_DIR$/todo.txt" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/views/math.html" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
       </list>
     </option>
   </component>
@@ -252,7 +191,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="704" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -340,20 +279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="31" selection-start="1347" selection-end="1347" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sushil.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="331" selection-end="331" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="68" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.0">
@@ -361,16 +286,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+    <entry file="file://$PROJECT_DIR$/app/views/sushil.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+        <state line="14" column="10" selection-start="331" selection-end="331" vertical-scroll-proportion="0.39473686">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="50" selection-end="289" vertical-scroll-proportion="0.20153551">
+        <state line="11" column="17" selection-start="424" selection-end="424" vertical-scroll-proportion="0.31015038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.2601156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/math.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="56" selection-start="571" selection-end="571" vertical-scroll-proportion="0.31015038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="83" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.676259">
           <folding />
         </state>
       </provider>

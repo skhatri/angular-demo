@@ -9,6 +9,10 @@ app.config(function ($routeProvider) {
             templateUrl: 'views/main.html',
             controller: 'MainCtrl'
         })
+        .when('/math', {
+            templateUrl: 'views/math.html',
+            controller: 'MathCtrl'
+        })
         .when('/vaibhav', {
             templateUrl: 'views/vaibhav.html',
             controller: 'VaibhavCtrl'
@@ -36,7 +40,28 @@ myApp.controller('MainCtrl',function ($scope) {
         $scope.m.result = newValue.toUpperCase();
     });
 
-}).controller('VaibhavCtrl',function ($scope) {
+})
+    .controller('MathCtrl',function ($scope) {
+        $scope.m = {};
+
+        $scope.add = function () {
+            var a = parseInt($scope.m.num1, 10);
+            var b = parseInt($scope.m.num2, 10);
+            $scope.m.result = a + b;
+        };
+
+
+        $scope.$watch('m.num1', function(newValue){
+            $scope.m.result = parseInt(newValue, 10) + parseInt($scope.m.num2, 10);
+        });
+
+        $scope.$watch('m.num2', function(newValue){
+            $scope.m.result = parseInt($scope.m.num1, 10) + parseInt(newValue, 10) ;
+        });
+
+
+    })
+    .controller('VaibhavCtrl',function ($scope) {
         $scope.interests = {
 
         };
