@@ -41,7 +41,7 @@ myApp.controller('MainCtrl', function ($scope) {
 
     $scope.$watch('m.message', function (newValue) {
         console.log('hey message changed. i got called. ' + newValue);
-        $scope.m.result = newValue.toUpperCase();
+        $scope.m.result = newValue ? newValue.toUpperCase() : newValue;
     });
 
 })
