@@ -14,6 +14,7 @@
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/bootstrap.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/bootstrap-datetimepicker.min.css">
         <!-- endbuild -->
 </head>
   <body ng-app="week3App">
@@ -32,6 +33,7 @@
             <li><a href="#/vaibhav">Vaibhav</a></li>
             <li><a href="#/sushil">Sushil</a></li>
             <li><a href="#/math">Math</a></li>
+            <li><a href="#/datetime">Date Time Picker</a></li>
         </ul>
     </div>
     <!-- Add your site or application content here -->
@@ -45,34 +47,29 @@
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
 
-    <script src="bower_components/angular/angular.js"></script>
-
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-
-    <!-- endbuild -->
-
         <!-- build:js scripts/plugins.js -->
         <script src="bower_components/jquery/jquery.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-alert.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-dropdown.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-tooltip.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-modal.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-transition.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-button.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-popover.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-typeahead.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-carousel.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-scrollspy.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
-        <script src="bower_components/bootstrap-sass/js/bootstrap-tab.js"></script>
+        <script src="bower_components/jquery-ui/ui/jquery.ui.datepicker.js"></script>
         <!-- endbuild -->
+        <script src="lib/bootstrap.js"></script>
+        <script src="lib/bootstrap-datetimepicker.js"></script>
 
         <!-- build:js scripts/modules.js -->
+        <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-resource/angular-resource.js"></script>
         <script src="bower_components/angular-cookies/angular-cookies.js"></script>
         <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
         <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <!--
+        <script src="scripts/directives/directives.dates.js"></script>
+        -->
+
+        <script src="scripts/directives/datetimepicker.directive.js"></script>
+
+        <script src="scripts/app.js"></script>
+        <!-- endbuild -->
+
 </body>
 </html>

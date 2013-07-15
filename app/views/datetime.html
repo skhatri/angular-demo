@@ -1,0 +1,55 @@
+<div class="alert alert-info">
+    <form name="AptForm">
+        <div class="control-group" ng-class="{error:AptForm.startTime.$dirty && AptForm.startTime.$invalid}">
+
+            <label class="control-label" for="startTime">Start Time</label>
+
+            <div class="controls" ng-hide="display">
+                <div class="input-append"
+                     datetimepicker="$parent.appointment.startTime"
+                     onselectdate="onStartTimeSelect(date)"
+                     ondateselect="onStartTimeSelect(date)"
+                     ng-model="$parent.appointment.startTime">
+                    <input type="text" class="input input-large" id="startTime" name="startTime" placeholder=""
+                           ng-model="$parent.appointment.startTime" ng-required="true"
+                           data-format="dd/MM/yyyy hh:mm:ss"
+                           ng-hide="display"/>
+                    <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
+                </div>
+
+                <div class="help-inline" ng-show="AptForm.startTime.$dirty && AptForm.startTime.$invalid">
+                    <span class="help-inline"
+                          ng-show="AptForm.startTime.$error.required">Start Time is required.</span>
+
+                </div>
+            </div>
+        </div>
+        {{appointment.startTime}}
+
+        <div class="control-group" ng-class="{error:AptForm.joinDate.$dirty && AptForm.joinDate.$invalid}">
+
+            <label class="control-label" for="joinDate">Join Date</label>
+
+            <div class="controls" ng-hide="display">
+                <div class="input-append"
+                     datetimepicker="$parent.appointment.joinDate"
+                     onselectdate="onDateSelect(date)"
+                     picktime="false"
+                     ng-model="$parent.appointment.joinDate">
+                    <input type="text" class="input input-large" id="joinDate" name="joinDate" placeholder=""
+                           ng-model="$parent.appointment.joinDate" ng-required="true"
+                           data-format="dd/MM/yyyy"
+                           ng-hide="display"/>
+                    <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
+                </div>
+
+                <div class="help-inline" ng-show="AptForm.joinDate.$dirty && AptForm.joinDate.$invalid">
+                    <span class="help-inline"
+                          ng-show="AptForm.joinDate.$error.required">Join Date is required.</span>
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>

@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('week3App', []);
+var app = angular.module('week3App', ['uitools']);
 
 //config
 app.config(function ($routeProvider) {
@@ -21,6 +21,10 @@ app.config(function ($routeProvider) {
             templateUrl: 'views/sushil.html',
             controller: 'SushilCtrl'
         })
+        .when('/datetime', {
+            templateUrl: 'views/datetime.html',
+            controller: 'DateCtrl'
+        })
         .otherwise({
             redirectTo: '/'
         });
@@ -28,20 +32,20 @@ app.config(function ($routeProvider) {
 
 var myApp = angular.module('week3App');
 
-myApp.controller('MainCtrl',function ($scope) {
+myApp.controller('MainCtrl', function ($scope) {
     $scope.m = {};
 
     $scope.makeUpper = function () {
         $scope.m.result = $scope.m.message.toUpperCase();
     };
 
-    $scope.$watch('m.message', function(newValue){
+    $scope.$watch('m.message', function (newValue) {
         console.log('hey message changed. i got called. ' + newValue);
         $scope.m.result = newValue.toUpperCase();
     });
 
 })
-    .controller('MathCtrl',function ($scope) {
+    .controller('MathCtrl', function ($scope) {
         $scope.m = {};
 
         $scope.add = function () {
@@ -51,12 +55,12 @@ myApp.controller('MainCtrl',function ($scope) {
         };
 
 
-        $scope.$watch('m.num1', function(newValue){
+        $scope.$watch('m.num1', function (newValue) {
             $scope.m.result = parseInt(newValue, 10) + parseInt($scope.m.num2, 10);
         });
 
-        $scope.$watch('m.num2', function(newValue){
-            $scope.m.result = parseInt($scope.m.num1, 10) + parseInt(newValue, 10) ;
+        $scope.$watch('m.num2', function (newValue) {
+            $scope.m.result = parseInt($scope.m.num1, 10) + parseInt(newValue, 10);
         });
 
 
@@ -79,5 +83,16 @@ myApp.controller('MainCtrl',function ($scope) {
             'Momo'
         ];
         $scope.friends = ["Sanjay", "Vaibhav"];
+    })
+    .controller('DateCtrl', function ($scope) {
+        $scope.appointment = {};
+        $scope.onDateSelect = function (newValue) {
+            console.log('i got this date. shall i do something else with it ' + newValue);
+            console.log('start time be updated as datetimepicker is bound to model ' + $scope.appointment.joinDate);
+        };
+        $scope.onStartTimeSelect = function (newValue) {
+            console.log('i got this date. shall i do something else with it ' + newValue);
+            console.log('appointment date should be updated as datetimepicker is bound to model ' + $scope.appointment.startTime);
+        }
     });
 
