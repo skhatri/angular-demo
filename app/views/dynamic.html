@@ -1,0 +1,31 @@
+<form name="DynamicForm" class="form form-horizontal">
+
+    <div class="control-group">
+        <label>Item Count</label>
+
+        <div class="controls">
+            <input type="text" class="input input-mini"
+                   ng-model="dynamic.itemCount"
+                   name="itemCount"/>
+
+        </div>
+    </div>
+    <span data-ng-repeat="i in itemArray()">
+    <ng-form name="itemForm">
+        <div class="control-group">
+            <label>Name</label>
+            <div class="controls">
+                <input type="text" class="input input-mini"
+                       ng-model="dynamic.items[i].name"
+                       ng-required="true"
+                       name="name"/>
+                <div class="error help help-inline" ng-show="itemForm.name.$error.required">
+                    Item Name is required.
+                </div>
+            </div>
+        </div>
+    </ng-form>
+    </span>
+    {{dynamic|json}}
+
+</form>
